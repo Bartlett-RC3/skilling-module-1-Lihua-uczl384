@@ -27,7 +27,7 @@ public class Session1 : MonoBehaviour {
     public float[] myFloatArray = new float[5];
 
     // 3.b.Lists
-    public List<int> myIntegerList = new List<int>();
+    public List<int> myIntegerList = new List<int>(); 
 
     // 2.Functions
     // Scope -- Type -- Variables -- Body (Instructions)
