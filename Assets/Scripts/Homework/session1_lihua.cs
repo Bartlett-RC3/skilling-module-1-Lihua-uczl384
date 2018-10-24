@@ -6,28 +6,28 @@ public class session1_Lihua : MonoBehaviour
 {
 
     // Use this for initialization
-    int scalex = 25;
-    int scaley = 16;
-    float scalez = 14.0f;
-    float scaler = 13.5f;
-    int max = int.MaxValue;
-    double xnumber = 18.3;
-    double ynumber = 19;
-    double number = double.MinValue;
+    public int scalex = 25;
+    public int scaley = 16;
+    public float scalez = 14.0f;
+    public float scaler = 13.5f;
+    public int max = int.MaxValue;
+    public double xnumber = 18.3;
+    public double ynumber = 19;
+    public double number = double.MinValue;
 
     //Text
-    string str = "london";
-    string str0 = "position";
+    public string str = "london";
+    public string str0 = "position";
 
     // Logaical  
-    bool numberButton = true;
-    bool numberButton0 = false;
+    public bool numberButton = true;
+    public bool numberButton0 = false;
     //2.Data structures
     //Array
-    int[] personGrade = { 19, 39, 20, 40, 50 };
-    double[] mathValue = new double[40];
-    int[,] numberArray0 = new int[80, 90];
-    float[] num = { 10.32f, 13.67f, 18.97f };
+    public int[] personGrade = { 19, 39, 20, 40, 50 };
+    public double[] mathValue = new double[40];
+    public int[,] numberArray0 = new int[80, 90];
+    public float[] num = { 10.32f, 13.67f, 18.97f };
     //List
     List<int> animalsNumber = new List<int>();
     //Dictionary
@@ -72,7 +72,7 @@ public class session1_Lihua : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = additionnumbers(2, 3);
+      float x = additionnumbers(2, 3);
         Debug.Log(x);
     }
 }
