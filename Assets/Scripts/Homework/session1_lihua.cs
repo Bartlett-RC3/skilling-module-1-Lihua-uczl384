@@ -62,7 +62,7 @@ public class Session1_Lihua : MonoBehaviour
 
         }
     }
-    float additionnumbers(float a, float b)
+    float Additionnumbers(float a, float b)
     {
         float results = a * b;
         return results;
@@ -72,7 +72,7 @@ public class Session1_Lihua : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = additionnumbers(2, 3);
+        float x = Additionnumbers(2, 3);
         Debug.Log(x);
     }
 }
