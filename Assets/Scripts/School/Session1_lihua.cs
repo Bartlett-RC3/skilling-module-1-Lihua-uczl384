@@ -90,7 +90,7 @@ public class Session1_lihua : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        int x =NumberAddition(2, 3);
+
 
           
 

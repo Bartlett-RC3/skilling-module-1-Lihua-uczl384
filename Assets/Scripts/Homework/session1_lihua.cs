@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class session1_Lihua : MonoBehaviour
+public class Session1_Lihua : MonoBehaviour
 {
 
     // Use this for initialization
@@ -72,11 +72,7 @@ public class session1_Lihua : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      float x = additionnumbers(2, 3);
+        float x = additionnumbers(2, 3);
         Debug.Log(x);
     }
 }
-
-
-
-
