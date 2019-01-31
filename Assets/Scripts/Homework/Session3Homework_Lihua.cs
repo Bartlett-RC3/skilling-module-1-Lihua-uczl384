@@ -12,8 +12,8 @@ public class Session3Homework_Lihua : MonoBehaviour
     public bool cubeRight;
     public bool cubeLeft1;
     public bool cubeRight1;
-    public GameObject copy;
-    public GameObject cube;
+    private GameObject copy;
+    private GameObject cube;
     public Material color;
 
 
@@ -58,10 +58,10 @@ public class Session3Homework_Lihua : MonoBehaviour
             }
         }
         //Create a cube and change its colour when key is pressed or mouse is pressed
-        if (Input.GetMouseButton(2))
+        if (Input.GetKey(KeyCode.Space))
 
         {
-            color.color = new Color(Random.value, Random.value, Random.value);
+            color.color = new Color(Random.Range(0.0f,1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
 
         }
 
