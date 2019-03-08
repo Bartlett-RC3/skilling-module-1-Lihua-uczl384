@@ -5,27 +5,26 @@ using UnityEngine;
 public class Session3Homework_Lihua : MonoBehaviour
 {
     public GameObject prefab;
-    public int number = 15;
-    public int spacing = 10;
+    public int number = 2;
+    public int spacing =3;
 
-    public bool cubeLeft;
-    public bool cubeRight;
-    public bool cubeLeft1;
-    public bool cubeRight1;
+    public bool cubeLeft =false;
+    public bool cubeRight = false;
+    public bool cubeLeft1 = false;
+    public bool cubeRight1 = false;
     private GameObject copy;
-    private GameObject cube;
+    public GameObject cube;
     public Material color;
 
-
+    int count = 1;
     // Use this for initialization
     void Start()
     {
 
-        if (cubeLeft == true)
-        {
+        
             Instantiate(prefab, new Vector3(-spacing, 0, 0), Quaternion.identity, this.transform);
-        }
-        cube = Instantiate(cube);
+       
+
     }
 
     // Update is called once per frame
@@ -34,6 +33,7 @@ public class Session3Homework_Lihua : MonoBehaviour
 
         // Move cube left and right by manually setting the Transform component
 
+        
 
         if (cubeRight == true)
         {
@@ -65,9 +65,30 @@ public class Session3Homework_Lihua : MonoBehaviour
 
         }
 
+        if (Input.GetKey(KeyCode.D))
 
+        {
 
+            this.transform.Translate(Vector3.right * count);
+            count++;
+        }
+        if (Input.GetKey(KeyCode.A))
 
+        {
+            this.transform.Translate(Vector3.left * count);
+            count++;
+        }
+        if (Input.GetKey(KeyCode.S))
+
+        {
+            this.transform.Translate(Vector3.down * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.W))
+
+        {
+            this.transform.Translate(Vector3.up * Time.deltaTime);
+        }
 
 
     }

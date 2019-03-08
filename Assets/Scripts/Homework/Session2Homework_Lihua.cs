@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using WorldDogs;
+
 
 public class Session2Homework_Lihua : MonoBehaviour {
     // Variables
